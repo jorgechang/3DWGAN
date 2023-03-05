@@ -1,10 +1,8 @@
 # Wasserstein GAN with gradient penalty for 3d point cloud generation
-<div align="center">
-  <a href="#">
-  	<img src="./visualization/plane/zoriginal1.gif" alt="Logo project" height="160" />
-    <img src="./visualization/chair/zoriginal0.gif" alt="Logo project" height="160" />
-  </a>
 
+<div align="center">
+  	<img src="visualization/plane/zoriginal1.gif" alt="Logo project" height="160" />
+    <img src="visualization/chair/zoriginal0.gif" alt="Logo project" height="160" />
 </div>
 
 This repository contains a PyTorch implementation inspired by [Learning Representations and Generative Models for 3D Point Clouds](http://proceedings.mlr.press/v80/achlioptas18a.html) that aims to analyze and improve the plain Wasserstein GAN with the idea of guided latent spaces for point cloud shape generation.
