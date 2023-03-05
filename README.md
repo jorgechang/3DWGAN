@@ -31,7 +31,7 @@ To train a model on single-class point clouds sampled from 3D shapes:
 ```bash
     python train_latent_guided_gan.py
 ```
-You can find multiple constants and hyperparameters in constanst_AE.py and constanst_WGAN.py.
+You can find multiple constants and hyperparameters in [constanst_AE.py](https://github.com/jorgechang/3DWGAN/blob/main/constants_AE.py) and [constanst_WGAN.py](https://github.com/jorgechang/3DWGAN/blob/main/constants_WGAN.py).
 Specifically, to train Latent Guided WGAN, it is necessary to change the constant GUIDED_SIZE to 0.
 
 ## Method 📓
