@@ -1,0 +1,8 @@
+torch
+numpy
+tqdm
+plyfile
+matplotlib
+plotly
+ipython
+chamferdist
