@@ -33,7 +33,7 @@ loss_dict = {"chamfer_dist": []}
 chamferDist = ChamferDistance()
 best_loss = float("inf")
 
-for epoch in range(EPOCHS):  # loop over the dataset multiple times
+for epoch in range(EPOCHS):
     running_loss = []
 
     for pointclouds in tqdm(train_dataloader):
