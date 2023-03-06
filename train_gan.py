@@ -47,7 +47,7 @@ loss_dict[generator.name] = []
 loss_dict[discriminator.name] = []
 best_generator_loss = float('inf')
 
-for epoch in range(EPOCHS):  # loop over the dataset multiple times
+for epoch in range(EPOCHS):
     running_loss_generator = []
     running_loss_discriminator = []
 
@@ -62,7 +62,7 @@ for epoch in range(EPOCHS):  # loop over the dataset multiple times
         # Generate fake data.
         x_fake = generator(fake_pointclouds)
 
-        # train critic
+        #  Train Critic.
         fake_output = discriminator(x_fake.detach())
         real_output = discriminator(pointclouds.detach())
         x_out = torch.cat((real_output, fake_output))
@@ -75,7 +75,7 @@ for epoch in range(EPOCHS):  # loop over the dataset multiple times
         optimizer_d.step()
         running_loss_discriminator.append(d_loss.item())
 
-        # Train Generator
+        # Train Generator.
         if total_iters % CRITIC_BOOST == 0:
             optimizer_g.zero_grad()
             fake_pointclouds = noiseFunc(
