@@ -217,4 +217,4 @@ Alternatively, I would spend more time researching and testing convolutions with
 * https://github.com/square-1111/3D-Point-Cloud-Modeling
 * https://github.com/s-chh/Pytorch-WGANGP
 * https://github.com/xchhuang/PointFlowRenderer-mitsuba2
-* Code is properly cited with respective licenceses.
+* Code is properly cited with respective licenses.
