@@ -98,7 +98,7 @@ The Critic was trained five times more than the generator with a gradient penalt
 For the last training procedure, the previously trained Encoder obtains the latent representation of the batch shapes. Then, this representation is appended to the noise Z, having an input of size 144 for the Generator.
 
 <div align="center">
-  <img src="figures//latent_guided_diagram.png" width="400"/> 
+  <img src="figures//latent_guided_diagram.png" width="420"/> 
 
   <sub>Latent guided WGAN diagram.</sub>
 </div>
