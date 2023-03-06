@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 ## Usage 💡
 
-To train a model on point clouds sampled from 3D shapes, you need to download the dataset, which can be found in this [repository](https://github.com/square-1111/3D-Point-Cloud-Modeling) and place it inside the data folder.
+To train a model on point clouds sampled from 3D shapes, you need to download the dataset, which can be found in this [repository](https://github.com/square-1111/3D-Point-Cloud-Modeling) and place it inside a folder named data in the root directory. It is also necessary to create three folders inside the weights folder: autoencoder, generator, and discriminator.
 
 To train a model on single-class point clouds sampled from 3D shapes:
 * Wasserstein GAN (WGAN)
@@ -63,7 +63,7 @@ The Critic (discriminator) operates on 1024 × 3 point set input. The architectu
 discriminator, once again, uses the PointNet global feature extractor without batch normalization, followed by a fully connected layer. The Generator is a series of dense layers like the Decoder, with layer normalization, GELU activation, and Leaky ReLU that takes a Gaussian noise vector along with a vector of length 16 as input represents the latent features of the shapes when training the latent space guided GAN.
 
 
-### Training details ⚗️
+### Training details 🏸
 
 Each model was trained for single shape generation using 1024 points from the plane and chair shapes from the Shapenet core dataset, a batch size of 128, and AdamW optimizer with default parameters.
 
