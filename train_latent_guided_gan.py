@@ -76,7 +76,8 @@ for epoch in range(EPOCHS):
         
         # Generate fake data.
         x_fake = generator(fake_pointclouds)
-        #train critic
+        
+        # Train Critic.
         fake_output = discriminator(x_fake.detach())
         real_output = discriminator(pointclouds.detach())
         x_out = torch.cat((real_output, fake_output))
@@ -85,7 +86,7 @@ for epoch in range(EPOCHS):
         optimizer_d.step()
         running_loss_discriminator.append(d_loss.item())
 
-        # Train Generator
+        # Train Generator.
         if total_iters % CRITIC_BOOST == 0:
             optimizer_g.zero_grad()
             fake_pointclouds = noiseFunc(MU, SIGMA, pointclouds.shape[0], DEVICE, LATENT_SIZE)
@@ -108,7 +109,6 @@ for epoch in range(EPOCHS):
     loss_dict[generator.name].append(mean_generator_loss)
     loss_dict[discriminator.name].append(mean_discriminator_loss)
 
-    #lr_scheduler.step()
 
     print("Epoch: " + str(epoch + 1)
             + "\ttotal_epochs: " + str(EPOCHS)
