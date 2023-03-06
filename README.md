@@ -1,6 +1,6 @@
 # Wasserstein GAN with gradient penalty for 3d point cloud generation
 
-<div style="display: flex; justify-content: center;">
+<div style="display: flex; justify-content: center; margin: 0 auto;">
     <img src="visualization/plane/zoriginal1.gif" alt="Logo project" height="160" />
     <img src="visualization/chair/zoriginal0.gif" alt="Logo project" height="160" />
 </div>
