@@ -61,7 +61,7 @@ Encoder uses the PointNet global feature extractor without batch normalization, 
 #### GAN
 
 The Critic (discriminator) operates on 1024 × 3 point set input. The architecture of the
-discriminator, once again, uses the PointNet global feature extractor without batch normalization, followed by a fully connected layer. The Generator is a series of dense layers like the Decoder, with layer normalization, GELU activation, and Leaky ReLU that takes a Gaussian noise vector along with a vector of length 16 as input represents the latent features of the shapes when training the latent space guided GAN.
+discriminator, once again, uses the PointNet global feature extractor without batch normalization, followed by a fully connected layer. The Generator is a series of dense layers like the Decoder, with layer normalization, GELU activation, and Leaky ReLU that takes a Gaussian noise vector along with a vector of length 16 as input that represents the latent features of the shapes when training the latent space guided GAN.
 
 
 ### Training details 🏸
